@@ -1,19 +1,29 @@
 {
-  "name": "water-market",
+  "name": "waterrefill",
   "version": "1.0.0",
   "type": "module",
   "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
     "start": "node server/server.js",
-    "dev": "concurrently \"npm run server\" \"npm run client\""
+    "server": "nodemon server/server.js"
   },
   "dependencies": {
-    "express": "^4.18.2",
+    "@emailjs/browser": "^4.4.1",
+    "clsx": "2.1.1",
     "cors": "^2.8.5",
-    "dotenv": "^16.3.1",
+    "express": "^4.18.2",
+    "lucide-react": "^1.14.0",
+    "react": "19.2.3",
+    "react-dom": "19.2.3",
+    "react-router-dom": "^7.14.2",
+    "recharts": "^3.8.1",
+    "tailwind-merge": "3.4.0",
     "bcryptjs": "^2.4.3",
     "jsonwebtoken": "^9.0.2",
-    "crypto": "^1.0.1"
-  }
+    "dotenv": "^16.3.1"
+  },
   "devDependencies": {
     "@tailwindcss/vite": "4.1.17",
     "@types/node": "22.19.17",
@@ -23,6 +33,7 @@
     "tailwindcss": "4.1.17",
     "typescript": "5.9.3",
     "vite": "7.2.4",
-    "vite-plugin-singlefile": "2.3.0"
+    "vite-plugin-singlefile": "2.3.0",
+    "nodemon": "^3.0.2"
   }
 }
